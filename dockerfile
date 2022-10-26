@@ -1,0 +1,1 @@
+docker run -v ./configs/prometheus.yaml:/etc/prometheus/prometheus.yaml -v prometheus_data:/prometheus -p 9092:9090 prom/prometheus:v2.26.0 --config.file=/etc/prometheus/prometheus.yaml --storage.tsdb.path=/prometheus --web.console.libraries=/usr/share/prometheus/console_libraries --web.console.templates=/usr/share/prometheus/consoles 
